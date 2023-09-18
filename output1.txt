@@ -1,0 +1,74 @@
+pwd
+/usagers3/vianc/Documents/TP2
+
+cd /usagers3/vianc/Documents/TP2
+
+ls
+initlab---Hiver23.pdf
+Makefile
+minisys.asm
+output1.txt
+output2.txt
+output3.txt
+output4.txt
+part1.c
+part2.c
+
+ls | sort
+initlab---Hiver23.pdf
+Makefile
+minisys.asm
+output1.txt
+output2.txt
+output3.txt
+output4.txt
+part1.c
+part2.c
+
+echo "message1"
+message1
+echo "message1" > foo.txt ;
+echo "message2" >> foo.txt; 
+cat foo.txt
+message1
+message2
+
+unlink foo.txt; ls
+initlab---Hiver23.pdf
+Makefile
+minisys.asm
+output1.txt
+output2.txt
+output3.txt
+output4.txt
+part1.c
+part2.c
+
+uname
+Linux
+
+uname -s
+Linux
+
+uname -r
+6.4.11-200.fc38.x86_64
+
+uname -o
+GNU/Linux
+
+uname -m
+x86_64
+
+echo /usr/local/cours/mpich-4/bin:/usr/local/cours/LOG8430/scitools/bin/linux64:/usr/local/rstudio-1.1.456/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/mpich/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/opt/MATLAB/R2023a/bin:/usr/local/CPNTools/bin:/usr/local/openclcc/bin:/usr/local/cours/inf1900/bin:/usr/local/cours/INF6603/bin:/usr/local/cours/inf6802/bin:/usr/local/cours/INF8410/bin:/usr/local/cours/INF8986/bin:/usr/local/cours/JohnMullins/bin:/usr/local/cours/LOG8470/bin:/usr/local/cours/mpich-4/bin:/usr/local/cours/inf1900/SimulIDE_0.3.12-SR8-INF1900.3/bin:/usr/local/cours/inf1900/bin:/usr/local/cours/INF6101/minizinc:/usr/local/cours/INF6101/minizinc/bin:/usr/local/cours/INF6603/CPAchecker-1.3.4-unix/scripts:/usr/local/cours/INF6603/llbmc-2013.1-Linux_64/bin:/usr/local/cours/INF6603/uppaal64-4.1.19:/usr/local/cours/INF6603/uppaal-tiga-0.18:/usr/local/cours/INF8215/minizinc:/usr/local/cours/INF8215/minizinc/bin:/opt/GraphDBFree:/usr/local/cours/INF8430/sleuthkit/bin:/usr/local/cours/INF8430/autopsy-4.14.0/bin:/usr/local/cours/IntelliJ/idea-IC-192.7142.36/bin
+/usr/local/cours/mpich-4/bin:/usr/local/cours/LOG8430/scitools/bin/linux64:/usr/local/rstudio-1.1.456/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/mpich/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/opt/MATLAB/R2023a/bin:/usr/local/CPNTools/bin:/usr/local/openclcc/bin:/usr/local/cours/inf1900/bin:/usr/local/cours/INF6603/bin:/usr/local/cours/inf6802/bin:/usr/local/cours/INF8410/bin:/usr/local/cours/INF8986/bin:/usr/local/cours/JohnMullins/bin:/usr/local/cours/LOG8470/bin:/usr/local/cours/mpich-4/bin:/usr/local/cours/inf1900/SimulIDE_0.3.12-SR8-INF1900.3/bin:/usr/local/cours/inf1900/bin:/usr/local/cours/INF6101/minizinc:/usr/local/cours/INF6101/minizinc/bin:/usr/local/cours/INF6603/CPAchecker-1.3.4-unix/scripts:/usr/local/cours/INF6603/llbmc-2013.1-Linux_64/bin:/usr/local/cours/INF6603/uppaal64-4.1.19:/usr/local/cours/INF6603/uppaal-tiga-0.18:/usr/local/cours/INF8215/minizinc:/usr/local/cours/INF8215/minizinc/bin:/opt/GraphDBFree:/usr/local/cours/INF8430/sleuthkit/bin:/usr/local/cours/INF8430/autopsy-4.14.0/bin:/usr/local/cours/IntelliJ/idea-IC-192.7142.36/bin
+
+which sleep
+/usr/bin/sleep
+
+sleep 1
+
+/usr/bin/sleep 1
+
+../../../../usr/bin/sleep 1
+
+sleep 1000

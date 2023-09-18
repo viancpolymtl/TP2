@@ -3,23 +3,37 @@
  * Automne  2022
  * Initlab - part2.c
  *
- * ajoutez vos noms, prénoms et matricules
+ * 2210084 Alexandre Provost-Cardin
+ * 2148974 Vincent Anctil
+ * Section de laboratoire 01
 */
 #include <stdio.h>
 #include <stdlib.h>
-// Si besoin, ajouter ici les directives d'inclusion et les déclarations globales
-// -------------------------------------------------
-// TODO
+#include <string.h>
+#include <unistd.h>
 
-// -------------------------------------------------
 void part21 ()
 {
- // TODO
+    char message1[] = "77dbcb01f571f1c32e196c3a7d27f62e (printed using printf)\n";
+    for(int i = 0; message1[i]!= '\n'; i++) {
+        printf("%c", message1[i]);
+    }
+
+    char message2[] = "77dbcb01f571f1c32e196c3a7d27f62e (printed using write)\n";
+    write(1, message2, sizeof(message2));
 }
 
 void part22 ()
 {
- // TODO
+    setvbuf(stdout, NULL, _IONBF, 0);
+
+    char message1[] = "77dbcb01f571f1c32e196c3a7d27f62e (printed using printf)\n";
+    for(int i = 0; message1[i]!= '\n'; i++) {
+        printf("%c", message1[i]);
+    }
+
+    char message2[] = "77dbcb01f571f1c32e196c3a7d27f62e (printed using write)\n";
+    write(1, message2, sizeof(message2));
 }
 
 

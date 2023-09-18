@@ -4,6 +4,9 @@
 ; Initlab - minisys.asm
 ;
 ; ajoutez vos noms, prénoms et matricules
+; 2210084 Alexandre Provost-Cardin
+; 2148974 Vincent Anctil
+; Section de laboratoire 01
 ;
 ; Documentation NASM: http://www.nasm.us/doc/nasmdoc3.html
 ;
@@ -21,6 +24,9 @@ SECTION .data
 ; man ascii -> code ascii en hexa de \n est 0x0A
     msg         db    "INF2610-TP0 ", 0x0A        ; char * msg = "INF2610-TP0 \n";
     msg_len     equ   $-msg                       ; msg_len = taille de msg
+    msg_pause   db    "Fin de la pause!", 0x0A    ;
+    msg_pause_len equ $-msg_pause                 ;
+
 
 
 ; Voir: man nanosleep pour les paramètres
@@ -59,6 +65,17 @@ _start:
     ; TODO: Pause avec sys_nanosleep suivi de sys_write "Fin de la pause!\n"
     ; prototype: nanosleep(   struct timespec *time1,
     ;                         struct timespec *time2)
+        mov     rdi, delay1        ;
+        mov     rsi, delay2        ; 
+        mov     rax, sys_nanosleep ;
+        syscall
+
+        mov rdi, stdout            ;
+        mov rsi, msg_pause         ;
+        mov rdx, msg_pause_len     ;
+        mov rax, sys_write         ;
+        syscall                    ;    
+
     
     
     ;
